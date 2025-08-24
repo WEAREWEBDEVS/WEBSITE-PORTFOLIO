@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Developers for Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header monaismywife">
+    <h1 id="sona">
+      <p>WEB DEVELOPER PORTFOLIO</p>
+    </h1>
+    <h2 class="about-text">
+      ABOUT US: We are young web developers who use HTML, CSS, Python, JavaScript, MongoDB, Node.js, React — and we are at your service. Our team can make a simplistic yet superior website for you at a very reasonable price. We shall make you happy seeing the website.
+    </h2>
+  </header>
+
+  <!-- Hyperlinks Section -->
+  <section class="hyperlinks tinkujiya">
+    <h3>Hyperlinks Made by Us:</h3>
+    <nav class="link-list">
+      <a href="https://www.youtube.com">Open YouTube</a>
+      <a href="https://www.google.com">Open Google</a>
+      <a href="https://www.facebook.com">Open Facebook</a>
+      <a href="https://www.twitter.com">Open Twitter</a>
+      <a href="https://www.instagram.com">Open Instagram</a>
+    </nav>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing">
+    <ul>
+      <li class="me">Contact: Use GitHub to contact us</li>
+      <li class="tinkujiya">Payment: ₹4999 for lifetime website</li>
+      <li class="chand">Yearly Subscription: ₹499 only</li>
+      <li class="monaismywife">Monthly Website: ₹89 only</li>
+      <li class="sonam">Weekly Website: ₹24 only</li>
+    </ul>
+  </section>
+
+  <!-- Additional Info -->
+  <section class="additional-info">
+    <p>Our knowledge of HTML and CSS ranks highest among most coders nowadays.</p>
+    <h6>Premium website keeps updating every month!</h6>
+  </section>
+
+  <!-- Footer Offer -->
+  <footer class="footer-offer">
+    <p>Try PRO website for 3 months for ₹9 OR try FREE website for 1 month with premium and an Additional 2 months</p>
+  </footer>
+
+  <!-- Premium Benefits -->
+  <section class="premium-benefits">
+    <h1>Premium Website Benefits:</h1>
+    <ul>
+      <li>Website updates every month</li>
+      <li>Gives faster and smoother access</li>
+      <li>Allows better functioning of business</li>
+      <li>Provides viewers with a better experience</li>
+      <li>Adds extra features to the website</li>
+      <li>Uses more tools to make the website interactive (e.g., JavaScript, Python, MongoDB, React)</li>
+      <li>Allows user to edit the website after it's made</li>
+      <li>Free-form user creation of content</li>
+    </ul>
+  </section>
+
+  <!-- Team Info -->
+  <section class="team-info">
+    <p>Members: 1</p>
+    <h6>This website was made using HTML and CSS</h6>
+    <div class="tech-description">
+      HTML: Used to design a basic layout for your website<br />
+      CSS: Used to make your website editable<br />
+      JavaScript: Used for further coding of your website's services to make it smart and self-sufficient
+    </div>
+    <h5 class="suf">
+      Other tools such as React, MongoDB, Node.js, advanced JavaScripting are used only for premium websites.
+    </h5>
+  </section>
+
+  <!-- Alert Script -->
+  <script>
+    alert("YOU WILL NOT NEED ANOTHER WEBSITE MAKER. YOU MAY PROCEED to get your own PERSONALIZED website.");
+  </script>
+
+  <!-- Background Particles -->
+  <div class="background-particles" id="particles-js"></div>
+  <style>
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('particles loaded');
+    });
+  </script>
+
+<div class="card skill-card">
+  <h4>JavaScript</h4>
+  <p>Click to see how we use JS to make websites dynamic</p>
+  <section class="card skill-card">
+  <h4 onclick="toggleJSInfo()" style="cursor:pointer;">JavaScript</h4>
+  <div id="jsInfo" style="display:none;">
+    <p>We use JavaScript to add interactivity, animations, and smart features like calculators, live previews, and chatbots. It makes your website dynamic and responsive to user actions.</p>
+  </div>
+</section>
+
+<script>
+  function toggleJSInfo() {
+    const info = document.getElementById('jsInfo');
+    info.style.display = info.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
+
+</div>
+
+<section class="testimonials">
+  <blockquote>"They made my site in 2 days. Super clean!" – Client A</blockquote>
+</section>
+<section class="pricing-calculator card">
+  <h3>Customize Your Website</h3>
+  <label><input type="checkbox" value="499" onchange="updatePrice()"> Blog Feature (₹499)</label><br>
+  <label><input type="checkbox" value="299" onchange="updatePrice()"> Contact Form (₹299)</label><br>
+  <label><input type="checkbox" value="999" onchange="updatePrice()"> Premium Design (₹999)</label><br>
+  <h4>Total Price: ₹<span id="total">0</span></h4>
+</section>
+
+<script>
+  function updatePrice() {
+    const checkboxes = document.querySelectorAll('.pricing-calculator input[type="checkbox"]');
+    let total = 0;
+    checkboxes.forEach(cb => { if (cb.checked) total += parseInt(cb.value); });
+    document.getElementById('total').textContent = total;
+  }
+</script>
+
+<section class="live-preview card">
+  <h3>Try HTML Live</h3>
+  <textarea id="htmlInput" rows="6" cols="40" placeholder="Type HTML here..."></textarea>
+  <iframe id="previewFrame" style="width:100%; height:200px; border:1px solid #ccc;"></iframe>
+</section>
+
+<script>
+  document.getElementById('htmlInput').addEventListener('input', function () {
+    document.getElementById('previewFrame').srcdoc = this.value;
+  });
+</script>
+
+<section class="seo-badge card">
+  <h3>Why Choose Us?</h3>
+  <ul>
+    <li>⚡ Lightning Fast Load Times</li>
+    <li>🔍 SEO Optimized for Google</li>
+    <li>📱 Mobile-Friendly Design</li>
+  </ul>
+</section>
+
+<button onclick="toggleTheme()">Toggle Theme</button>
+
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle('dark-mode');
+  }
+</script>
+
+<style>
+  .dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+</style>
+
+<section class="timeline card">
+  <h3>Our Journey</h3>
+  <ul>
+    <li><strong>2024:</strong> Started learning HTML & CSS</li>
+    <li><strong>2025:</strong> First client project completed</li>
+    <li><strong>2026:</strong> Launch of Premium Website Service</li>
+  </ul>
+</section>
+
+<section class="contact-form card">
+  <h3>Contact Us</h3>
+  <form onsubmit="sendMessage(event)">
+    <input type="text" placeholder="Your Name" required><br>
+    <input type="email" placeholder="Your Email" required><br>
+    <textarea placeholder="Your Message" required></textarea><br>
+    <button type="submit">Send</button>
+  </form>
+  <p id="replyMessage" style="display:none;">Thanks! We'll reply within 24 hours.</p>
+</section>
+
+<script>
+  function sendMessage(e) {
+    e.preventDefault();
+    document.getElementById('replyMessage').style.display = 'block';
+  }
+</script>
+
+<style>
+  .floating-icon {
+    position: absolute;
+    animation: float 6s infinite ease-in-out;
+    opacity: 0.3;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+</style>
+
+<div class="floating-icon" style="top:10%; left:20%;">💻</div>
+<div class="floating-icon" style="top:30%; left:60%;">⚙️</div>
+<div class="floating-icon" style="top:50%; left:40%;">🌐</div>
+
+<section class="chatbot card">
+  <h3>Talk to Our Bot</h3>
+  <input type="text" id="userInput" placeholder="Ask something..." onkeypress="handleChat(event)">
+  <div id="chatResponse"></div>
+</section>
+
+<input type="text" onkeypress="handleChat(event)" placeholder="Type your message..." />
+<div id="chat-output"></div>
+
+<script>
+  function handleChat(e) {
+    if (e.key === 'Enter') {
+      const input = e.target.value.toLowerCase();
+      let response = "Sorry, I didn't get that.";
+
+      // 🛒 Business & Service Keywords
+      if (input.includes("price")) response = "Our websites start at ₹24.";
+      else if (input.includes("contact")) response = "You can reach us via GitHub or email.";
+      else if (input.includes("free")) response = "A one-time offer: 1 month premium plus 2 bonus months. You should take it.";
+      else if (input.includes("money")) response = "IT'S WORTH IT, I GUARANTEE.";
+      else if (input.includes("asset")) response = "IT'S WORTH IT, I GUARANTEE.";
+      else if (input.includes("guarantee")) response = "IT'S WORTH IT, I GUARANTEE.";
+      else if (input.includes("trust")) response = "YOUR MONEY IS IN THE HANDS OF GROWTH AND DEVELOPMENT.";
+      else if (input.includes("how do i trust you")) response = "You are in the right room.";
+
+      // 💬 Greetings & Help
+      else if (input.includes("hi")) response = "NEED HELP? I'M HERE FOR YOUR SERVICE.";
+      else if (input.includes("hello")) response = "HI, IN ONE WORD TELL ME WHAT YOU NEED.";
+      else if (input.includes("help")) response = "Sure, how do I help you?";
+      else if (input.includes("thanks")) response = "You're welcome! I'm always here when you need me.";
+      else if (input.includes("bye")) response = "See you soon! Don’t forget to come back with more questions.";
+      else if (input.includes("how are you")) response = "Running at full speed and ready to help! How about you?";
+
+      // 🧠 Identity & Capabilities
+      else if (input.includes("who are you")) response = "I'm your digital assistant—part code, part charm, all yours.";
+      else if (input.includes("what can you do")) response = "I can answer questions, crack jokes, help with websites, and maybe even make your day better.";
+      else if (input.includes("who made you")) response = "I was crafted by brilliant minds and a few cups of coffee.";
+      else if (input.includes("open source")) response = "Open source means the code is free to view, use, and modify. Sharing is caring!";
+
+      // 🎭 Personality & Fun
+      else if (input.includes("joke")) response = "Why did the developer go broke? Because he used up all his cache 😄";
+      else if (input.includes("i'm bored")) response = "Wanna play a game, hear a joke, or explore something weird? I'm loaded with options.";
+      else if (input.includes("tell me something")) response = "Did you know octopuses have three hearts? Just like me when I see good design.";
+      else if (input.includes("sonam")) response = "wth.......";
+
+      // 🧑‍💻 Developer & Edge Cases
+      else if (input.includes("website")) response = "What do you need?";
+      else if (input.includes("developer") && input.includes("show me commands")) response = "NAH, TAKE PERMISSION KIDDO.";
+      else if (input.includes("ur dumb")) response = "IN THAT CASE, I'M SORRY I CANNOT HELP YA. YOU MAY TALK TO MY CREATOR.";
+
+      // 💬 Output the response
+      document.getElementById("chat-output").innerText = response;
+    }
+  }
+</script>
+
+
+</body>
+</html>

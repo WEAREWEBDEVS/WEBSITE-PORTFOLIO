@@ -1,0 +1,108 @@
+body {
+  background: linear-gradient(-45deg, #1e1e2f, #2c3e50, #34495e, #1abc9c);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  background-color: #ff6b6b;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+ul {
+  font-weight: 1000;
+  color: rgb(101, 51, 51);
+}
+
+li {
+  font-size: xx-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: chocolate;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  color: white;
+}
+
+p {
+  text-align: center;
+}
+
+/* Updated from span to class */
+.tech-description {
+  font-size: xx-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+}
+
+/* === Headings === */
+h2 {
+  font-size: 40px;
+  color: rgba(255, 153, 0, 0.989);
+}
+
+h6 {
+  color: rgb(59, 47, 47);
+}
+
+/* === Links === */
+a {
+  color: blue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  background-color: greenyellow;
+}
+
+/* === Custom Classes === */
+.monaismywife {
+  background-color: rgb(106, 255, 0);
+}
+
+.tinkujiya {
+  color: blueviolet;
+  background-color: crimson;
+}
+
+.sonam {
+  background-color: aqua;
+  color: blanchedalmond;
+}
+
+.chand {
+  color: thistle;
+  background-color: greenyellow;
+}
+
+.me {
+  background-color: goldenrod;
+  color: rgba(61, 165, 165, 0.906);
+}
+
+.mo {
+  font-weight: bolder;
+  font-size: 41px;
+  color: rgba(255, 153, 0, 0.989);
+}
+
+.suf {
+  background-color: blueviolet;
+  font-style: italic;
+  font-weight: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: blue;
+}
+
+/* Particle background class */
+.background-particles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
